@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.Proyecto</groupId>
-	<artifactId>com.Proyecto_Proyecto_jar_1</artifactId>
+	<artifactId>Proyecto</artifactId>
 	<version>1</version>
 	<name>Proyecto</name>
 	<description>Proyecto Grupo 8 Lunes en la noche Tienda de Ropa en Linea</description>
@@ -112,7 +112,5 @@
             </plugin>
         </plugins>
     </build>
-    <modules>
-        <module>Proyecto</module>
-    </modules>
+
 </project>
