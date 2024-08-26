@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+    <head>     
+        <title>Tienda Ropa</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+    </head>
+    <body>
+        <section th:fragment="mapa">      
+
+                <div style="text-align: center; height: 450px;">
+                    <div id="map" style="height: 100%; width: 100%;"></div>
+                    <script>
+
+                        function initMap() {
+                            const map = new google.maps.Map(document.getElementById('map'), {
+                                center: {lat: 9.994782462165235, lng: -84.13702871440333},
+                                zoom: 15
+                            });
+
+                            const marker = new google.maps.Marker({
+                                position: {lat: 9.994782462165235, lng: -84.13702871440333},
+                                map: map,
+                                title: 'Tienda Ropa'
+                            });
+                        }
+
+                        window.addEventListener('load', initMap);
+                    </script>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
