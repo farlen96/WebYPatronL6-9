@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>Proyecto Tienda de Ropa</title>        
+    </head>
+    <body>
+        <header th:replace="~{layout/plantilla :: header}"/>
+         <section th:replace="~{carrito/fragmentos :: listadoProductos}"/>
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Aunque operamos en línea, nuestro equipo está basado en:</p>
+            <address>
+                San Jose,<br>
+                San Pedro,<br>
+                Por la fuente de la hispanidad, Costa Rica
+            </address>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9965283565252!2d-84.05912702514229!3d9.934246090167823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e397fce171eb%3A0xd1aa672863be5de3!2sMall%20San%20Pedro!5e0!3m2!1ses-419!2scr!4v1724629288808!5m2!1ses-419!2scr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+          <footer th:replace="~{layout/plantilla :: footer}"/>   
+    </body>
+</html> 
